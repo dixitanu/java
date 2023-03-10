@@ -1,0 +1,63 @@
+import javax.swing.*;
+import java.awt.event.*;
+
+public class form implements ActionListener  {
+ 
+     JFrame f1;
+     JButton b1;
+     JLabel l1,l2,l3,l4;
+     JTextField t1,t2,t3,t4;
+     
+     form()
+     {
+        f1 = new JFrame("Form");
+        f1.setVisible(true);
+        f1.setSize(600,600);
+        f1.setLayout(null);
+        b1 = new JButton("Submit");
+        l1 = new JLabel("ID");
+        l2 = new JLabel("Name");
+        l3 = new JLabel("Course");
+        l4 = new JLabel("Mobile No.");
+        t1 = new JTextField();
+        t2 = new JTextField();
+        t3 = new JTextField();
+        t4 = new JTextField();
+        
+
+        f1.add(b1);
+        f1.add(l1);
+        f1.add(l2);
+        f1.add(l3);
+        f1.add(l4);
+        f1.add(t1);
+        f1.add(t2);
+        f1.add(t3);
+        f1.add(t4);
+
+                    l1.setBounds(100,100,100,30);
+                    t1.setBounds(220,100,100,30);
+                    l2.setBounds(100,160,100,30);
+                    t2.setBounds(220,160,100,30);
+                    l3.setBounds(100,220,100,30);
+                    t3.setBounds(220,220,100,30);
+                    l4.setBounds(100,280,100,30);
+                    t4.setBounds(220,280,100,30);
+                    b1.setBounds(100,340,200,30);
+
+               b1.addActionListener(this);
+          }
+
+          public void actionPerformed(ActionEvent ae)
+          {
+
+          }
+
+          public static void main(String s[])
+{
+    new form();
+}
+
+          
+}
+
