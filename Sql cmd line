@@ -1,0 +1,5 @@
+create table regform
+(
+Id number(3),
+Name varchar(10),
+Mobile_no number 
