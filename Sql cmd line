@@ -1,5 +1,8 @@
 create table regform
 (
 Id number(3),
+Password varchar(10),
 Name varchar(10),
-Mobile_no number 
+Mobile_no number(10),
+Email varchar(30)
+);
