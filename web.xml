@@ -1,0 +1,10 @@
+<web-app>
+<servlet>
+<servlet-name>insert</servlet-name>
+<servlet-class>insert</servlet-class>
+</servlet>
+<servlet-mapping>
+      <servlet-name>insert</servlet-name>
+      <url-pattern>/insert</url-pattern>
+</servlet-mapping>
+</web-app>
